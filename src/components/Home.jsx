@@ -150,7 +150,7 @@ const CardBtn = styled.button`
 const Item = styled.span``;
 
 const Footer = styled.footer`
-  padding: 20px;
+  padding: 30px;
 `;
 
 const FooterCard = styled.span`
@@ -160,6 +160,20 @@ const FooterCard = styled.span`
   font-size: 50px;
   opacity: 0.6;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 40px;
+  cursor: pointer;
+  position: absolute;
+  width: 429.92px;
+  height: 110.11px;
+  left: 450px;
+  top: 810.89px;
+`;
+
+const Portfolio = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
 `;
 
 const Home = () => {
@@ -246,9 +260,17 @@ const Home = () => {
       {/* Footer */}
       <Footer>
         <FooterCard>
-          <AccountBalanceWalletIcon />
-          <HomeIcon />
-          <YoutubeSearchedForIcon />
+          <Portfolio>
+            <AccountBalanceWalletIcon />
+            Portfolio
+          </Portfolio>
+          <Portfolio>
+            <HomeIcon />
+          </Portfolio>
+          <Portfolio>
+            <YoutubeSearchedForIcon />
+            Search
+          </Portfolio>
         </FooterCard>
       </Footer>
     </Container>
