@@ -6,9 +6,11 @@ import ResetPassword from "./components/ResetPassword";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import SignUpTwo from "./components/SignUpTwo";
+import Start from "./components/Start";
 import Successful from "./components/Successful";
 import UploadPics from "./components/UploadPics";
 import Verify from "./components/Verify";
+import Splash from "./components/Splash";
 
 const App = () => {
   return (
@@ -22,7 +24,9 @@ const App = () => {
       {/* <Verify /> */}
       {/* <UploadPics /> */}
       {/* <Pin /> */}
-      <Successful />
+      {/* <Successful /> */}
+      {/* <Start /> */}
+      <Splash />
     </div>
   );
 };
