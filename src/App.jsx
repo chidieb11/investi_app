@@ -11,6 +11,14 @@ import Successful from "./components/Successful";
 import UploadPics from "./components/UploadPics";
 import Verify from "./components/Verify";
 import Splash from "./components/Splash";
+import Profile from "./components/Profile";
+import EditProfiile from "./components/EditProfile";
+import UploadDoc from "./components/UploadDoc";
+import Company from "./components/Company";
+import Portfolio from "./components/Portfolio";
+import Explore from "./components/Explore";
+import AddCash from "./components/AddCash";
+import Notification from "./components/Notification";
 
 const App = () => {
   return (
@@ -26,7 +34,15 @@ const App = () => {
       {/* <Pin /> */}
       {/* <Successful /> */}
       {/* <Start /> */}
-      <Splash />
+      {/* <Splash /> */}
+      {/* <Profile />  */}
+      {/* <EditProfiile /> */}
+      {/* <UploadDoc /> */}
+      {/* <Company /> */}
+      {/* <Portfolio /> */}
+      {/* <Explore /> */}
+      {/* <AddCash /> */}
+      <Notification />.
     </div>
   );
 };
