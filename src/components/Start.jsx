@@ -5,6 +5,7 @@ import WifiIcon from "@material-ui/icons/Wifi";
 import BatteryCharging50OutlinedIcon from "@material-ui/icons/BatteryCharging50Outlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import Img from "../components/images/stock-app.png";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -74,7 +75,7 @@ const Form = styled.form`
 `;
 
 const Button = styled.button`
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -84,7 +85,7 @@ const Button = styled.button`
 `;
 
 const ButtonTwo = styled.button`
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -125,8 +126,12 @@ const Start = () => {
       </SecondWrapper>
       {/* Third wrapper */}
       <Form>
-        <Button>Sign in</Button>
-        <ButtonTwo>Sign up</ButtonTwo>
+        <Link to="/signin">
+          <Button>Sign in</Button>
+        </Link>
+        <Link to="/signup">
+          <ButtonTwo>Sign up</ButtonTwo>
+        </Link>
       </Form>
     </Container>
   );

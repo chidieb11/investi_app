@@ -19,30 +19,34 @@ import Portfolio from "./components/Portfolio";
 import Explore from "./components/Explore";
 import AddCash from "./components/AddCash";
 import Notification from "./components/Notification";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <ResetPassword /> */}
-      {/* <SignIn /> */}
-      {/* <SignUp /> */}
-      {/* <SignUpTwo /> */}
-      {/* <Location /> */}
-      {/* <Verify /> */}
-      {/* <UploadPics /> */}
-      {/* <Pin /> */}
-      {/* <Successful /> */}
-      {/* <Start /> */}
-      {/* <Splash /> */}
-      {/* <Profile />  */}
-      {/* <EditProfiile /> */}
-      {/* <UploadDoc /> */}
-      {/* <Company /> */}
-      {/* <Portfolio /> */}
-      {/* <Explore /> */}
-      {/* <AddCash /> */}
-      <Notification />.
+      <Routes>
+        <Route exact path="/" element={<Splash />} />
+        <Route path="start" element={<Start />} />
+        <Route path="home" element={<Home />} />
+        <Route path="resetpassword" element={<ResetPassword />} />
+        <Route path="signin" element={<SignIn />} />
+        <Route path="signup" element={<SignUp />} />
+        <Route path="signup2" element={<SignUpTwo />} />
+        <Route path="location" element={<Location />} />
+        <Route path="verify" element={<Verify />} />
+        <Route path="uploadprofilepicture" element={<UploadPics />} />
+        <Route path="pin" element={<Pin />} />
+        <Route path="successful" element={<Successful />} />
+
+        {/* <Profile />
+      <EditProfiile />
+      <UploadDoc />
+      <Company />
+      <Portfolio />
+      <Explore />
+      <AddCash />
+      <Notification />. */}
+      </Routes>
     </div>
   );
 };

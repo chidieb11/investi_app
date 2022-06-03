@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -21,7 +22,9 @@ const Text = styled.h1`
 const splash = () => {
   return (
     <Container>
-      <Text>Investi</Text>
+      <Link to="/start" style={{ color: "#fff" }}>
+        <Text>Investi</Text>
+      </Link>
     </Container>
   );
 };

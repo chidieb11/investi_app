@@ -5,6 +5,7 @@ import WifiIcon from "@material-ui/icons/Wifi";
 import BatteryCharging50OutlinedIcon from "@material-ui/icons/BatteryCharging50Outlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import Img from "../components/images/Nike.png";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -86,7 +87,7 @@ const Form = styled.form`
 `;
 
 const Button = styled.button`
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -129,7 +130,9 @@ const Successful = () => {
       </SecondWrapper>
       {/* Third wrapper */}
       <Form>
-        <Button>Done</Button>
+        <Link to="/home">
+          <Button>Done</Button>
+        </Link>
       </Form>
     </Container>
   );

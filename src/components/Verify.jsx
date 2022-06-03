@@ -4,6 +4,7 @@ import NetworkCellIcon from "@material-ui/icons/NetworkCell";
 import WifiIcon from "@material-ui/icons/Wifi";
 import BatteryCharging50OutlinedIcon from "@material-ui/icons/BatteryCharging50Outlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -82,7 +83,7 @@ const InputContainer = styled.div`
 `;
 
 const Button = styled.button`
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -129,7 +130,9 @@ const Location = () => {
       <Form>
         <Input placeholder="Input verification code" />
         <InputText>Resend</InputText>
-        <Button>Continue</Button>
+        <Link to="/uploadprofilepicture">
+          <Button>Continue</Button>
+        </Link>
       </Form>
     </Container>
   );

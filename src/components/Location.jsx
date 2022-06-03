@@ -4,6 +4,7 @@ import NetworkCellIcon from "@material-ui/icons/NetworkCell";
 import WifiIcon from "@material-ui/icons/Wifi";
 import BatteryCharging50OutlinedIcon from "@material-ui/icons/BatteryCharging50Outlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -88,7 +89,7 @@ const InputContainer = styled.div`
 `;
 
 const Button = styled.button`
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -151,7 +152,9 @@ const Location = () => {
           <Option>Anambra</Option>
         </Select>
         <Input placeholder="Input City" />
-        <Button>Continue</Button>
+        <Link to="/verify">
+          <Button>Continue</Button>
+        </Link>
       </Form>
     </Container>
   );

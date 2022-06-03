@@ -4,6 +4,7 @@ import NetworkCellIcon from "@material-ui/icons/NetworkCell";
 import WifiIcon from "@material-ui/icons/Wifi";
 import BatteryCharging50OutlinedIcon from "@material-ui/icons/BatteryCharging50Outlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -68,7 +69,7 @@ const Form = styled.form`
 `;
 
 const Button = styled.button`
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -147,7 +148,9 @@ const Pin = () => {
           <Buttons>0</Buttons>
           <Buttons></Buttons>
         </PinButtons>
-        <Button>Continue</Button>
+        <Link to="/successful">
+          <Button>Continue</Button>
+        </Link>
       </Form>
     </Container>
   );

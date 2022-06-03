@@ -59,7 +59,7 @@ const SecondWrapper = styled.div`
 
 const Card = styled.div`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  position: fixed;
+  // position: fixed;
   top: 130px;
   right: 495px;
   display: flex;
@@ -107,10 +107,12 @@ const ThirdWrapper = styled.div`
   padding: 30px;
 `;
 
-const CardItems = styled.div``;
+const CardItems = styled.div`
+  margin-bottom: 100px;
+`;
 
 const CardItemTitle = styled.h2`
-  margin-top: 45px;
+  margin-top: 0;
   font-weight: 600;
   font-size: 20px;
 `;
@@ -258,7 +260,7 @@ const Home = () => {
         </CardItems>
       </ThirdWrapper>
       {/* Footer */}
-      <Footer>
+      {/* <Footer>
         <FooterCard>
           <Portfolio>
             <AccountBalanceWalletIcon />
@@ -272,7 +274,7 @@ const Home = () => {
             Search
           </Portfolio>
         </FooterCard>
-      </Footer>
+      </Footer> */}
     </Container>
   );
 };

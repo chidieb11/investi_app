@@ -4,6 +4,7 @@ import NetworkCellIcon from "@material-ui/icons/NetworkCell";
 import WifiIcon from "@material-ui/icons/Wifi";
 import BatteryCharging50OutlinedIcon from "@material-ui/icons/BatteryCharging50Outlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 926px;
@@ -65,7 +66,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   margin-top: 60px;
-  width: 70%;
+  width: 30vw;
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -104,8 +105,15 @@ const SignIn = () => {
       <Form>
         <Input placeholder="Email" />
         <Input placeholder="Password" />
-        <Button>Continue</Button>
-        <Text>Forgot password</Text>
+        <Link to="/home">
+          <Button>Continue</Button>
+        </Link>
+        <Link
+          to="/resetpassword"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
+          <Text>Forgot password</Text>
+        </Link>
       </Form>
     </Container>
   );
